@@ -1,8 +1,8 @@
 const User = require("../models/User");
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
-const { sanitizeUser } = require("../utils/SanitizeUser");
-const { generateAccessToken, generateRefreshToken } = require("../utils/GenerateToken");
+const { sanitizeUser } = require("../Utils/SanitizeUser");
+const { generateAccessToken, generateRefreshToken } = require("../Utils/GenerateToken");
 const redisClient = require('../config/redis');
 
 // Configuration

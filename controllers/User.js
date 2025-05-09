@@ -1,5 +1,5 @@
 const User=require("../models/User");
-const { sanitizeUser } = require("../utils/SanitizeUser");
+const { sanitizeUser } = require("../Utils/SanitizeUser");
 
 exports.getById=async(req,res)=>{
     try {
