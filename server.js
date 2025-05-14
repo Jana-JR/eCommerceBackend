@@ -138,7 +138,8 @@ app.use((err, req, res, next) => {
 
 // Server startup
 const port = process.env.PORT || 5001;
-app.listen(port, () => {
+
+app.listen(port, '0.0.0.0', () => {
   console.log(`
   Server running in ${process.env.NODE_ENV || 'development'} mode
   Listening on port ${port}
@@ -146,4 +147,5 @@ app.listen(port, () => {
   Redis: ${redisClient.connected ? 'Connected' : 'Connection failed'}
   `);
 });
+
 
